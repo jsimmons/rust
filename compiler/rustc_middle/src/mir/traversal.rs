@@ -247,8 +247,7 @@ impl<'a, 'tcx> Iterator for Postorder<'a, 'tcx> {
 ///
 /// Construction of a `ReversePostorder` traversal requires doing a full
 /// postorder traversal of the graph, therefore this traversal should be
-/// constructed as few times as possible. Use the `reset` method to be able
-/// to re-use the traversal
+/// constructed as few times as possible.
 #[derive(Clone)]
 pub struct ReversePostorder<'a, 'tcx> {
     body: &'a Body<'tcx>,
